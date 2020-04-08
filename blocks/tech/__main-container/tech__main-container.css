@@ -1,0 +1,5 @@
+.tech__main-container {
+    max-width: 90%;
+    display: flex;    
+    margin: auto;
+}

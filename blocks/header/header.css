@@ -1,0 +1,7 @@
+.header {
+    display: flex;
+    margin: auto;
+    min-height: 80px;
+    border-bottom: grey 1px solid;
+    margin-bottom: 0;
+}

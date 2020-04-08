@@ -1,0 +1,14 @@
+.search__title {
+    max-width: 608px;
+    font-size: 3.75rem;
+    line-height: 1.06;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .search__title {
+        max-width: 385px;
+        font-size: 2.25rem;
+        line-height: 1.11;
+    }
+}

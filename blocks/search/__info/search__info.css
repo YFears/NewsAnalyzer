@@ -1,0 +1,14 @@
+.search__info {
+    max-width: 545px;
+    font-size: 1.125rem;
+    line-height: 1.33;
+    margin: 0;
+    margin-top: 32px;
+}
+
+@media screen and (max-width: 768px) {
+    .search__info {
+        max-width: 452px;
+        margin-top: 16px;
+    }
+}

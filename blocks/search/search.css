@@ -1,0 +1,14 @@
+@import url('./__container/search__container.css');
+@import url('./__title/search__title.css');
+@import url('./__info/search__info.css');
+
+.search {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: auto;
+    background-image: url('../../images/georgia-de-lotz.jpg');
+    background-size: cover;
+    background-position: center;
+}

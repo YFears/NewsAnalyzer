@@ -1,0 +1,9 @@
+.menu__link_theme_light {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.33;    
+    color: #FFFFFF;
+    transform: translateY(1px);
+}

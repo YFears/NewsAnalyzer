@@ -1,0 +1,9 @@
+.menu__link_theme_dark {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    color: #1A1B22;    
+    transform: translateY(2px);
+}

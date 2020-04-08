@@ -56,6 +56,11 @@ module.exports = {
             template: './index.html',
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './about.html',
+            filename: 'about.html'
+        }),
         new WebpackMd5Hash()
     ]
 };

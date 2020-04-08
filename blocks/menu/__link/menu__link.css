@@ -1,0 +1,17 @@
+.menu__link {       
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+    text-decoration: none;    
+}
+
+.menu__link:first-child {
+    margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu__link {
+        max-width: 452px;
+        margin-top: 16px;
+    }
+}

@@ -1,0 +1,13 @@
+.search__container {
+    max-width: 60%;
+    display: flex;
+    margin: 80px auto 0px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .search__container {
+        margin-top: 40px;
+    }
+}
