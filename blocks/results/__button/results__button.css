@@ -1,0 +1,15 @@
+.results__button {
+    border-radius: 80px;
+    border: 0px;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.33;
+    text-align: center;
+    color: #1A1B22;
+    min-width: 288px;
+    min-height: 64px;
+    margin-top: 64px;
+}

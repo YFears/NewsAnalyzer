@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/YFears/NewsAnalyzer.git"
   },
+  "browserslist": "> 0.25%, not dead",
   "author": "Yury Firsau",
   "license": "ISC",
   "bugs": {

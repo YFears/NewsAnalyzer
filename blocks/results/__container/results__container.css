@@ -1,0 +1,10 @@
+.results__container{
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+}

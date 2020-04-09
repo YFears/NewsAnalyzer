@@ -1,0 +1,13 @@
+@import url('./__container/results__container.css');
+@import url('./__title/results__title.css');
+@import url('./__subtitle/results__subtitle.css');
+@import url('./__title-container/results__title-container.css');
+@import url('./__link-analytics/results__link-analytics.css');
+@import url('./__cards-container/results__cards-container.css');
+@import url('./__info/results__info.css');
+@import url('./__button/results__button.css');
+
+.results {
+    background: #F5F6F7;
+    max-width: 100%;    
+}

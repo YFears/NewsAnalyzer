@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="NewsAnalyzer - сервис для анализа происходящих в мире событий">
+    <meta name="author" content="Yury Firsau">
+    <title>NewsAnalyzer</title>
+    <link rel="icon" href="<%=require('./images/favicon.png').default%>" type="image/png">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header">
+            <nav class="menu">
+                <a href="./index.html" class="menu__link menu__link_theme_dark">NewsAnalyzer</a>
+                <div class="menu__container">
+                    <a href="./index.html" class="menu__link menu__link_theme_dark">Главная</a>
+                    <a href="./about.html" class="menu__link menu__link_theme_dark menu__link_border_black">О
+                        проекте</a>
+                </div>
+            </nav>
+        </header>
+
+        <section class="analytics">
+            <div class="analytics__info">
+
+            </div>
+            <div class="analytics__chart">
+                
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__copyright"> &copy; 2020. Юрий</p>
+            <ul class="footer__row-links">
+                <li class="footer__row"><a href="./index.html" class="footer__link">Главная</a> </li>
+                <li class="footer__row"><a href="./about.html" class="footer__link">О проекте</a></li>
+                <li class="footer__row"><a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a>
+                </li>
+            </ul>
+            <ul class="footer__row-social">
+                <li class="footer__row"><a href="https://github.com/YFears" class="footer__link"><img
+                            src="<%=require('./images/gh.png').default%>" alt="Cсылка на Github автора"
+                            class="footer__image"></a></li>
+                <li class="footer__row"><a href="https://www.facebook.com/" class="footer__link"><img
+                            src="<%=require('./images/fb.png').default%>" alt="Cсылка на Facebook автора"
+                            class="footer__image"></a></li>
+            </ul>
+        </footer>
+
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+
+</html>

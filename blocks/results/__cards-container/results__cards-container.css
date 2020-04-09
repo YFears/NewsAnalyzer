@@ -1,0 +1,8 @@
+.results__cards-container {
+    max-width: 100%;
+    margin: 64px auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+}
