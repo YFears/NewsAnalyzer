@@ -1,0 +1,12 @@
+@import url('./__date/commit-card__date.css');
+@import url('./__author-container/commit-card__author-container.css');
+@import url('./__author-name/commit-card__author-name.css');
+@import url('./__author-mail/commit-card__author-mail.css');
+@import url('./__author-comment/commit-card__author-comment.css');
+@import url('./__author-image/commit-card__author-image.css');
+@import url('./__author-subcontainer/commit-card__author-subcontainer.css');
+
+.commit-card {
+    width: 90%;
+    margin: auto;
+}

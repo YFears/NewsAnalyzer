@@ -1,0 +1,11 @@
+@import url('./__link/github__link.css');
+@import url('./__title-container/github__title-container.css');
+@import url('./__title/github__title.css');
+
+.github {
+    max-width: 100%;
+    margin: auto;
+    background: #F5F6F7;
+    padding-top: 72px;
+    padding-bottom: 80px;
+}

@@ -1,0 +1,17 @@
+.swiper-container {
+  width: 100%;
+  padding-bottom: 32px;
+  margin-top: 32px;
+}
+
+.swiper-wrapper {
+    margin-bottom: 48px;
+}
+
+.swiper-slide {
+    height: 288px;
+    background: #fff;
+    margin-left: 50px;
+    flex-basis: 400px;
+    border-radius: 16px;
+  }
