@@ -9,7 +9,7 @@
     <meta name="author" content="Yury Firsau">
     <title>NewsAnalyzer</title>
     <link rel="icon" href="<%=require('./images/favicon.png').default%>" type="image/png">
-    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.paper.css %>">
 </head>
 
 <body>
@@ -20,18 +20,77 @@
                 <a href="./index.html" class="menu__link menu__link_theme_dark">NewsAnalyzer</a>
                 <div class="menu__container">
                     <a href="./index.html" class="menu__link menu__link_theme_dark">Главная</a>
-                    <a href="./about.html" class="menu__link menu__link_theme_dark menu__link_border_black">О
+                    <a href="./about.html" class="menu__link menu__link_theme_dark">О
                         проекте</a>
                 </div>
             </nav>
         </header>
-
-        <section class="analytics">
-            <div class="analytics__info">
-
+        <section class="info-analytics">
+            <div class="info-analytics__path-container">
+                <p class="info-analytics__main-path">Главная</p>
+                <p class="info-analytics__sub-path">&nbsp;/ Аналитика</p>
             </div>
-            <div class="analytics__chart">
-                
+            <p class="info-analytics__topic-title">Вы спросили: «Путешествия»</p>
+            <div class="main-analitycs__news-stat">
+                <p class="info-analytics__title">Новостей за неделю:&nbsp;</p>
+                <p class="info-analytics__subtitle">34 324</p>
+            </div>
+            <div class="main-analitycs__note-stat">
+                <p class="info-analytics__title">Упоминаний в загаловках:&nbsp;</p>
+                <p class="info-analytics__subtitle">235</p>
+            </div>
+        </section>
+        <section class="analytics">
+            <div class="analytics__container">
+                <h2 class="analytics__title">Аналитика по дням</h2>
+                <div class="analytics__data">
+                    <div class="analytics__info-container">
+                        <p class="analytics__date-title">Дата (август)</p>
+                        <p class="analytics__count-title">Кол-во упоминаний</p>
+                    </div>
+                    <div class="analytics__rate">
+                        <p class="analytics__rate-number">0</p>
+                        <p class="analytics__rate-number">25</p>
+                        <p class="analytics__rate-number">50</p>
+                        <p class="analytics__rate-number">75</p>
+                        <p class="analytics__rate-number">100</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">19, пн</p>
+                        <p class="analytics__count" style="width: 15%;">15</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">20, вт</p>
+                        <p class="analytics__count" style="width: 18%;">18</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">21, ср</p>
+                        <p class="analytics__count" style="width: 11%;">11</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">22, чт</p>
+                        <p class="analytics__count" style="width: 39%;">39</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">23, пт</p>
+                        <p class="analytics__count" style="width: 45%;">45</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">24, сб</p>
+                        <p class="analytics__count" style="width: 73%;">73</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day" >25, вс</p>
+                        <p class="analytics__count" style="width: 34%;">34</p>
+                    </div>
+                    <div class="analytics__rate">
+                        <p class="analytics__rate-number">0</p>
+                        <p class="analytics__rate-number">25</p>
+                        <p class="analytics__rate-number">50</p>
+                        <p class="analytics__rate-number">75</p>
+                        <p class="analytics__rate-number">100</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -54,7 +113,7 @@
         </footer>
 
     </div>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.paper.entry %>"></script>
 </body>
 
 </html>

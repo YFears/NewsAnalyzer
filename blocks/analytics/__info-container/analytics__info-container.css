@@ -1,0 +1,12 @@
+.analytics__info-container {
+    display: flex;
+    border-bottom: 1px solid #1A1B22;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}

@@ -5,7 +5,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const webpack = require('webpack');
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: {
+        main: './src/index.js',
+        about: './src/about.js',
+        paper: './src/paper.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -26,11 +30,11 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use:  [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
             },
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
-                loader: 'file-loader?name=./vendor/[name].[ext]'
+                loader: 'file-loader?name=./vendor/[name].[ext]',
             },
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
@@ -45,8 +49,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new MiniCssExtractPlugin({ 
-            filename: 'style.[contenthash].css',
+        new MiniCssExtractPlugin({
+            filename: './[name].[contenthash].css',
         }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,

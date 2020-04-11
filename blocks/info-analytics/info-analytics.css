@@ -1,0 +1,15 @@
+@import url('./__main-path/info-analytics__main-path.css');
+@import url('./__news-stat/main-analitycs__news-stat.css');
+@import url('./__note-stat/main-analitycs__note-stat.css');
+@import url('./__path-container/info-analytics__path-container.css');
+@import url('./__sub-path/info-analytics__sub-path.css');
+@import url('./__subtitle/info-analytics__subtitle.css');
+@import url('./__title/info-analytics__title.css');
+@import url('./__topic-title/info-analytics__topic-title.css');
+
+.info-analytics {
+    max-width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}

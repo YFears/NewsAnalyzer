@@ -1,0 +1,7 @@
+.analytics__rate {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% -104px);
+    margin-right: 0;
+    margin-left: auto;
+}
