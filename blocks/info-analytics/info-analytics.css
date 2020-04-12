@@ -13,3 +13,24 @@
     padding-top: 40px;
     padding-bottom: 80px;
 }
+
+@media screen and (max-width: 1024px) {
+    .info-analytics {
+        padding-top: 36px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-analytics {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .info-analytics {        
+        padding-top: 16px;
+        padding-bottom: 24px;
+    }
+}

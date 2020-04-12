@@ -8,3 +8,25 @@
     margin: 0;
     margin-top: 80px;
 }
+
+@media screen and (max-width: 1024px) {
+    .info-analytics__topic-title {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-analytics__topic-title {
+        margin-top: 32px;
+        font-size: 2rem;
+        line-height: 1.06;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .info-analytics__topic-title {
+        margin-top: 0px;
+        font-size: 1.875rem;
+        line-height: 1.13;
+    }
+}

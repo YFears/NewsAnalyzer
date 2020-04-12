@@ -1,8 +1,13 @@
-.menu__link {       
+.menu__link {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.33;
     display: flex;
     align-items: center;
     margin-left: 34px;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .menu__link:first-child {
@@ -11,7 +16,13 @@
 
 @media screen and (max-width: 768px) {
     .menu__link {
-        max-width: 452px;
-        margin-top: 16px;
+        margin-left: 11px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .menu__link {
+        font-size: 1rem;
+        line-height: 1.5;
     }
 }

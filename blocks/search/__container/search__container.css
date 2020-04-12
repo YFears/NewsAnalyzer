@@ -8,6 +8,14 @@
 
 @media screen and (max-width: 768px) {
     .search__container {
+        max-width: 70%;
         margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .search__container {
+        max-width: 90%;
+        margin-top: 30px;
     }
 }

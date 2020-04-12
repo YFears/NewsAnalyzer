@@ -12,3 +12,9 @@
         margin-top: 16px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .search__info {
+        margin-top: 56px;
+    }
+}

@@ -1,5 +1,7 @@
+@import url('./__logo/menu__logo.css');
 @import url('./__link/menu__link.css');
 @import url('./__link/_theme/_dark/menu__link_theme_dark.css');
+@import url('./__link/_theme/_fade/menu__link_theme_fade.css');
 @import url('./__link/_theme/_light/menu__link_theme_light.css');
 @import url('./__link/_border/_black/menu__link_border_black.css');
 @import url('./__link/_border/white/menu__link_border_white.css');

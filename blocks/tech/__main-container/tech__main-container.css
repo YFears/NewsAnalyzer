@@ -1,5 +1,13 @@
 .tech__main-container {
     max-width: 90%;
-    display: flex;    
+    display: grid;
+    grid-template-columns: 30% 70%;
     margin: auto;
+}
+
+@media screen and (max-width: 950px) {
+    .tech__main-container {
+       display: flex;
+       flex-direction: column;
+    }
 }

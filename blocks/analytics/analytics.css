@@ -13,3 +13,24 @@
     padding-bottom: 80px;
     background-color: #F5F6F7;;;
 }
+
+@media screen and (max-width: 1024px) {
+    .analytics {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .analytics {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .analytics {        
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}

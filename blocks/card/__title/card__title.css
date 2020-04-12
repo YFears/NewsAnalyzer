@@ -5,6 +5,13 @@
     font-weight: normal;
     font-size: 1.625;
     line-height: 1.15;
-    color: #1A1B22;    
+    color: #1A1B22;
     margin: 12px auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .card__title {
+        font-size: 1.375rem;
+        line-height: 1.09;
+    }
 }

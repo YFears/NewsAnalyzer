@@ -2,3 +2,9 @@
     display: flex;
     margin-top: 24px;
 }
+
+@media screen and (max-width: 425px) {
+    .main-analitycs__news-stat {
+        margin-top: 16px;
+    }
+}

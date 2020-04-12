@@ -1,4 +1,7 @@
 .analytics__day {
-    flex-basis: 104px;
-    height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125rem;
+    line-height: 1;
 }

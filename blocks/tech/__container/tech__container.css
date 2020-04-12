@@ -1,7 +1,3 @@
 .tech__container {
-    margin-left: 70px;
     text-align: center;
-}
-.tech__container:nth-child(2) {
-    margin-left: 192px;
 }

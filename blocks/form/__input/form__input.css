@@ -3,10 +3,17 @@
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
-    line-height: 1.45;
+    line-height: 1.37;
     color: #B6BCBF;
     border: 1px solid #D1D2D6;
     border-radius: 100px;
     flex-basis: 100%;
     padding-left: 24px;
+    min-height: 62px;
+}
+
+@media screen and (max-width: 768px) {
+    .form__input{
+        min-height: 54px;
+    }
 }

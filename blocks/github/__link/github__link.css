@@ -7,4 +7,27 @@
     color: #1A1B22;
     margin: 0;
     text-decoration: none;
+    width: 30%;
+    text-align: right;
+}
+
+.github__link::after {
+    content: ">";
+}
+
+@media screen and (max-width: 425px) {
+    .github__link {
+        order: 1;
+        width: 100%;
+        border: 1px solid #1A1B22;
+        box-sizing: border-box;
+        border-radius: 80px;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        color: #1A1B22;
+    }
+    .github__link::after {
+        content: "";
+    }
 }

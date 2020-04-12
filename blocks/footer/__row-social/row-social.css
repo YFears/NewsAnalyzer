@@ -5,4 +5,5 @@
     display: grid;
     grid-template-columns: max-content max-content;
     column-gap: 27px;   
+    justify-self: right;
 }

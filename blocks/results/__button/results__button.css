@@ -8,9 +8,23 @@
     font-size: 1.125rem;
     line-height: 1.33;
     text-align: center;
-    color: #1A1B22;
-    min-width: 288px;
+    width: 30%;
     min-height: 64px;
     margin-top: 64px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .results__button {
+        min-height: 56px;
+        width: 40%;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .results__button {
+        width: 100%;
+        margin-top: 12px;
+    }
 }

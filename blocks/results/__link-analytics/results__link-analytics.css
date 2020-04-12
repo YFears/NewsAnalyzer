@@ -8,3 +8,10 @@
     margin: 0;
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 650px) {
+    .results__link-analytics {
+        margin-top: 16px;
+    }
+}

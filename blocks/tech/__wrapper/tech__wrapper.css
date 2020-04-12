@@ -1,0 +1,17 @@
+.tech__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .tech__wrapper {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tech__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

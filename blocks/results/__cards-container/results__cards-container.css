@@ -6,3 +6,21 @@
     column-gap: 16px;
     row-gap: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .results__cards-container {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .results__cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .results__cards-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -17,9 +17,9 @@
 
         <header class="header">
             <nav class="menu">
-                <a href="./index.html" class="menu__link menu__link_theme_dark">NewsAnalyzer</a>
+                <a href="./index.html" class="menu__logo menu__link_theme_dark">NewsAnalyzer</a>
                 <div class="menu__container">
-                    <a href="./index.html" class="menu__link menu__link_theme_dark">Главная</a>
+                    <a href="./index.html" class="menu__link menu__link_theme_fade">Главная</a>
                     <a href="./about.html" class="menu__link menu__link_theme_dark menu__link_border_black">О
                         проекте</a>
                 </div>
@@ -53,23 +53,27 @@
         <section class="tech">
             <div class="tech__main-container">
                 <h2 class="tech__title">Используемые технологии</h2>
-                <div class="tech__container">
-                    <h3 class="tech__subtitle">HTML</h3>
-                    <img src="<%=require('./images/html5.png').default%>" alt="лого HTML" class="tech__subtitle-image">
-                </div>
-                <div class="tech__container">
-                    <h3 class="tech__subtitle">CSS</h3>
-                    <img src="<%=require('./images/css3.png').default%>" alt="лого CSS" class="tech__subtitle-image">
-                </div>
-                <div class="tech__container">
-                    <h3 class="tech__subtitle">JavaScript</h3>
-                    <img src="<%=require('./images/js.png').default%>" alt="лого Javascript"
-                        class="tech__subtitle-image">
-                </div>
-                <div class="tech__container">
-                    <h3 class="tech__subtitle">Webpack</h3>
-                    <img src="<%=require('./images/webpack.png').default%>" alt="лого Webpack"
-                        class="tech__subtitle-image">
+                <div class="tech__wrapper">
+                    <div class="tech__container">
+                        <h3 class="tech__subtitle">HTML</h3>
+                        <img src="<%=require('./images/html5.png').default%>" alt="лого HTML"
+                            class="tech__subtitle-image">
+                    </div>
+                    <div class="tech__container">
+                        <h3 class="tech__subtitle">CSS</h3>
+                        <img src="<%=require('./images/css3.png').default%>" alt="лого CSS"
+                            class="tech__subtitle-image">
+                    </div>
+                    <div class="tech__container">
+                        <h3 class="tech__subtitle">JavaScript</h3>
+                        <img src="<%=require('./images/js.png').default%>" alt="лого Javascript"
+                            class="tech__subtitle-image">
+                    </div>
+                    <div class="tech__container">
+                        <h3 class="tech__subtitle">Webpack</h3>
+                        <img src="<%=require('./images/webpack.png').default%>" alt="лого Webpack"
+                            class="tech__subtitle-image">
+                    </div>
                 </div>
             </div>
         </section>
@@ -87,112 +91,111 @@
         </section>
 
         <section class="github">
-            <div class="github__title-container">
+            <div class="github__container">
                 <h2 class="github__title">История коммитов из GitHub</h2>
-                <a href="https://github.com" class="github__link">Открыть в Github <img
-                        src="<%=require('./images/Path5.png').default%>" alt="ссылка на Github"></a>
-            </div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="commit-card">
-                            <p class="commit-card__date">14 августа, 2019</p>
-                            <div class="commit-card__author-container">
-                                <img src="<%=require('./images/author.jpg').default%>" alt=""
-                                    class="commit-card__author-image">
-                                <div class="commit-card__author-subcontainer">
-                                    <p class="commit-card__author-name">Антон Дмитриев</p>
-                                    <p class="commit-card__author-mail">anton@yandex.ru</p>
+                <a href="https://github.com" class="github__link">Открыть в Github </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <p class="commit-card__date">14 августа, 2019</p>
+                                <div class="commit-card__author-container">
+                                    <img src="<%=require('./images/author.jpg').default%>" alt=""
+                                        class="commit-card__author-image">
+                                    <div class="commit-card__author-subcontainer">
+                                        <p class="commit-card__author-name">Антон Дмитриев</p>
+                                        <p class="commit-card__author-mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
+                                <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
+                                    toolkit that can greatly improve your HTML & CSS workflow.</p>
                             </div>
-                            <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
-                                toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="commit-card">
-                            <p class="commit-card__date">14 августа, 2019</p>
-                            <div class="commit-card__author-container">
-                                <img src="<%=require('./images/author.jpg').default%>" alt=""
-                                    class="commit-card__author-image">
-                                <div class="commit-card__author-subcontainer">
-                                    <p class="commit-card__author-name">Антон Дмитриев</p>
-                                    <p class="commit-card__author-mail">anton@yandex.ru</p>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <p class="commit-card__date">14 августа, 2019</p>
+                                <div class="commit-card__author-container">
+                                    <img src="<%=require('./images/author.jpg').default%>" alt=""
+                                        class="commit-card__author-image">
+                                    <div class="commit-card__author-subcontainer">
+                                        <p class="commit-card__author-name">Антон Дмитриев</p>
+                                        <p class="commit-card__author-mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
+                                <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
+                                    toolkit that can greatly improve your HTML & CSS workflow.</p>
                             </div>
-                            <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
-                                toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="commit-card">
-                            <p class="commit-card__date">14 августа, 2019</p>
-                            <div class="commit-card__author-container">
-                                <img src="<%=require('./images/author.jpg').default%>" alt=""
-                                    class="commit-card__author-image">
-                                <div class="commit-card__author-subcontainer">
-                                    <p class="commit-card__author-name">Антон Дмитриев</p>
-                                    <p class="commit-card__author-mail">anton@yandex.ru</p>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <p class="commit-card__date">14 августа, 2019</p>
+                                <div class="commit-card__author-container">
+                                    <img src="<%=require('./images/author.jpg').default%>" alt=""
+                                        class="commit-card__author-image">
+                                    <div class="commit-card__author-subcontainer">
+                                        <p class="commit-card__author-name">Антон Дмитриев</p>
+                                        <p class="commit-card__author-mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
+                                <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
+                                    toolkit that can greatly improve your HTML & CSS workflow.</p>
                             </div>
-                            <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
-                                toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="commit-card">
-                            <p class="commit-card__date">14 августа, 2019</p>
-                            <div class="commit-card__author-container">
-                                <img src="<%=require('./images/author.jpg').default%>" alt=""
-                                    class="commit-card__author-image">
-                                <div class="commit-card__author-subcontainer">
-                                    <p class="commit-card__author-name">Антон Дмитриев</p>
-                                    <p class="commit-card__author-mail">anton@yandex.ru</p>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <p class="commit-card__date">14 августа, 2019</p>
+                                <div class="commit-card__author-container">
+                                    <img src="<%=require('./images/author.jpg').default%>" alt=""
+                                        class="commit-card__author-image">
+                                    <div class="commit-card__author-subcontainer">
+                                        <p class="commit-card__author-name">Антон Дмитриев</p>
+                                        <p class="commit-card__author-mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
+                                <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
+                                    toolkit that can greatly improve your HTML & CSS workflow.</p>
                             </div>
-                            <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
-                                toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="commit-card">
-                            <p class="commit-card__date">14 августа, 2019</p>
-                            <div class="commit-card__author-container">
-                                <img src="<%=require('./images/author.jpg').default%>" alt=""
-                                    class="commit-card__author-image">
-                                <div class="commit-card__author-subcontainer">
-                                    <p class="commit-card__author-name">Антон Дмитриев</p>
-                                    <p class="commit-card__author-mail">anton@yandex.ru</p>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <p class="commit-card__date">14 августа, 2019</p>
+                                <div class="commit-card__author-container">
+                                    <img src="<%=require('./images/author.jpg').default%>" alt=""
+                                        class="commit-card__author-image">
+                                    <div class="commit-card__author-subcontainer">
+                                        <p class="commit-card__author-name">Антон Дмитриев</p>
+                                        <p class="commit-card__author-mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
+                                <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
+                                    toolkit that can greatly improve your HTML & CSS workflow.</p>
                             </div>
-                            <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
-                                toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="commit-card">
-                            <p class="commit-card__date">14 августа, 2019</p>
-                            <div class="commit-card__author-container">
-                                <img src="./images/author.jpg" alt="" class="commit-card__author-image">
-                                <div class="commit-card__author-subcontainer">
-                                    <p class="commit-card__author-name">Антон Дмитриев</p>
-                                    <p class="commit-card__author-mail">anton@yandex.ru</p>
+                        <div class="swiper-slide">
+                            <div class="commit-card">
+                                <p class="commit-card__date">14 августа, 2019</p>
+                                <div class="commit-card__author-container">
+                                    <img src="./images/author.jpg" alt="" class="commit-card__author-image">
+                                    <div class="commit-card__author-subcontainer">
+                                        <p class="commit-card__author-name">Антон Дмитриев</p>
+                                        <p class="commit-card__author-mail">anton@yandex.ru</p>
+                                    </div>
                                 </div>
+                                <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
+                                    toolkit that can greatly improve your HTML & CSS workflow.</p>
                             </div>
-                            <p class="commit-card__author-comment">Emmet (formerly Zen Coding) is a web- developer’s
-                                toolkit that can greatly improve your HTML & CSS workflow.</p>
                         </div>
-                    </div>
 
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div> -->
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
         <footer class="footer">
-            <p class="footer__copyright"> &copy; 2020. Юрий</p>
+            <p class="footer__copyright"> &copy; 2020 NewsAnalyzer</p>
             <ul class="footer__row-links">
                 <li class="footer__row"><a href="./index.html" class="footer__link">Главная</a> </li>
                 <li class="footer__row"><a href="./about.html" class="footer__link">О проекте</a></li>

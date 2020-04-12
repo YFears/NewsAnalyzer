@@ -7,26 +7,17 @@
 .footer {
     display: flex;
     justify-content: space-between;
+    position: relative;
     margin: 0 auto;
-    padding-top: 33px;
-    padding-bottom: 25px;
-    max-width: 85%;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    max-width: 90%;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 660px) {
     .footer {
-        max-width: 90%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .footer {
-        margin-top: 102px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .footer {
-        margin-top: 64px;
+        display: grid;
+        grid-template-areas: "a b" "c c";
+        row-gap: 24px;
     }
 }

@@ -4,7 +4,34 @@
 @import url('./__title/about__title.css');
 
 .about {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 65%;
+    column-gap: 5%;
     padding-top: 80px;
     padding-bottom: 80px;
+    max-width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

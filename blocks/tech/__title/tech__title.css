@@ -6,5 +6,12 @@
     line-height: 1.15;
     color: #1A1B22;
     margin: 0; 
-    flex-basis: 344px;
+    max-width: 350px;
+}
+
+@media screen and (max-width: 950px) {
+    .tech__title {
+        font-size: 1.875rem;
+        line-height: 1.13;
+    }
 }

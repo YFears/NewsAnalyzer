@@ -5,13 +5,34 @@
 }
 
 .swiper-wrapper {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat( 100, minmax(400px, 1fr));
+  column-gap: 18px;
 }
 
 .swiper-slide {
-    height: 288px;
-    background: #fff;
-    margin-left: 50px;
-    flex-basis: 400px;
-    border-radius: 16px;
+  min-height: 288px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    height: 242px;
   }
+  .swiper-wrapper {
+    grid-template-columns: repeat( 100, minmax(336px, 1fr));
+    margin-bottom: 32px;
+  }  
+}
+
+@media screen and (max-width: 425px) {
+  .swiper-slide {
+    height: 264px;
+  }
+  .swiper-wrapper {
+    grid-template-columns: repeat( 100, minmax(288px, 1fr));
+    margin-bottom: 16px;
+  }
+}

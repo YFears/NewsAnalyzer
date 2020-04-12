@@ -4,5 +4,19 @@
     padding: 0; 
     display: grid;
     grid-template-columns: max-content max-content max-content;
-    column-gap: 48px;   
+    column-gap: 42px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer__row-links  {
+        column-gap: 24px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .footer__row-links  {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
 }

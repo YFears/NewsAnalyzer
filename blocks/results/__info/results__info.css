@@ -1,3 +1,15 @@
 .results__info {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 1.15;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .results__info {
+        font-size: 1.875rem;
+        line-height: 1.13;
+    }
 }
