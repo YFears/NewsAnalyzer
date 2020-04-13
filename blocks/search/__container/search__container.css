@@ -1,5 +1,5 @@
 .search__container {
-    max-width: 60%;
+    max-width: 608px;
     display: flex;
     margin: 80px auto 0px;
     justify-content: center;
@@ -8,8 +8,14 @@
 
 @media screen and (max-width: 768px) {
     .search__container {
-        max-width: 70%;
+        max-width: 60%;
         margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search__container {
+        max-width: 70%;
     }
 }
 
