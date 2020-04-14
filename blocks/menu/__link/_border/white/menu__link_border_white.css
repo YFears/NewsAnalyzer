@@ -1,0 +1,4 @@
+.menu__link_border_white{
+    border-bottom: 3px white solid;
+    transform: translateY(2px); 
+}

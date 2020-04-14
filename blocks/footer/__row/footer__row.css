@@ -1,0 +1,12 @@
+.footer__row {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    transition: transform .2s;
+    line-height: 24px;   
+}
+
+.footer__row:hover {
+    transform: scale(1.1);
+}

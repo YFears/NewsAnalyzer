@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="NewsAnalyzer - сервис для анализа происходящих в мире событий">
+    <meta name="author" content="Yury Firsau">
+    <title>NewsAnalyzer</title>
+    <link rel="icon" href="<%=require('./images/favicon.png').default%>" type="image/png">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.paper.css %>">
+</head>
+
+<body>
+    <div class="page">
+
+        <header class="header">
+            <nav class="menu">
+                <a href="./index.html" class="menu__logo menu__logo_theme_dark">NewsAnalyzer</a>
+                <div class="menu__container">
+                    <a href="./index.html" class="menu__link menu__link_theme_dark">Главная</a>
+                    <a href="./about.html" class="menu__link menu__link_theme_fade">О
+                        проекте</a>
+                </div>
+            </nav>
+        </header>
+        <section class="info-analytics">
+            <div class="info-analytics__path-container">
+                <p class="info-analytics__main-path">Главная</p>
+                <p class="info-analytics__sub-path">&nbsp;/ Аналитика</p>
+            </div>
+            <h2 class="info-analytics__topic-title">Вы спросили: «Путешествия»</h2>
+            <div class="main-analitycs__news-stat">
+                <h3 class="info-analytics__title">Новостей за неделю:&nbsp;</h3>
+                <p class="info-analytics__subtitle">34 324</p>
+            </div>
+            <div class="main-analitycs__note-stat">
+                <h3 class="info-analytics__title">Упоминаний в загаловках:&nbsp;</h3>
+                <p class="info-analytics__subtitle">235</p>
+            </div>
+        </section>
+        <section class="analytics">
+            <div class="analytics__container">
+                <h2 class="analytics__title">Аналитика по дням</h2>
+                <div class="analytics__data">
+                    <div class="analytics__info-container">
+                        <p class="analytics__date-title">Дата (август)</p>
+                        <p class="analytics__count-title">Кол-во упоминаний</p>
+                    </div>
+                    <hr>
+                    <div class="analytics__rate">
+                        <p class="analytics__rate-number">0</p>
+                        <p class="analytics__rate-number">25</p>
+                        <p class="analytics__rate-number">50</p>
+                        <p class="analytics__rate-number">75</p>
+                        <p class="analytics__rate-number">100</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">19, пн</p>
+                        <p class="analytics__count" style="width: 15%;">15</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">20, вт</p>
+                        <p class="analytics__count" style="width: 18%;">18</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">21, ср</p>
+                        <p class="analytics__count" style="width: 11%;">11</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">22, чт</p>
+                        <p class="analytics__count" style="width: 39%;">39</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">23, пт</p>
+                        <p class="analytics__count" style="width: 45%;">45</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day">24, сб</p>
+                        <p class="analytics__count" style="width: 73%;">73</p>
+                    </div>
+                    <div class="analytics__stat-container">
+                        <p class="analytics__day" >25, вс</p>
+                        <p class="analytics__count" style="width: 34%;">34</p>
+                    </div>
+                    <div class="analytics__rate">
+                        <p class="analytics__rate-number">0</p>
+                        <p class="analytics__rate-number">25</p>
+                        <p class="analytics__rate-number">50</p>
+                        <p class="analytics__rate-number">75</p>
+                        <p class="analytics__rate-number">100</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p class="footer__copyright"> &copy; 2020 NewsAnalyzer</p>
+            <ul class="footer__row-links">
+                <li class="footer__row"><a href="./index.html" class="footer__link">Главная</a> </li>
+                <li class="footer__row"><a href="./about.html" class="footer__link">О проекте</a></li>
+                <li class="footer__row"><a href="https://praktikum.yandex.ru/" class="footer__link">Яндекс.Практикум</a>
+                </li>
+            </ul>
+            <ul class="footer__row-social">
+                <li class="footer__row"><a href="https://github.com/YFears" class="footer__link"><img
+                            src="<%=require('./images/gh.png').default%>" alt="Cсылка на Github автора"
+                            class="footer__image"></a></li>
+                <li class="footer__row"><a href="https://www.facebook.com/" class="footer__link"><img
+                            src="<%=require('./images/fb.png').default%>" alt="Cсылка на Facebook автора"
+                            class="footer__image"></a></li>
+            </ul>
+        </footer>
+
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.chunks.paper.entry %>"></script>
+</body>
+
+</html>

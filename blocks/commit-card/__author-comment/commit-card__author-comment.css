@@ -1,0 +1,10 @@
+.commit-card__author-comment {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.37;
+    color: #1A1B22;
+    margin: 0;
+    margin-top: 16px;
+}

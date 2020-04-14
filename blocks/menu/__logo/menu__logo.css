@@ -1,0 +1,17 @@
+.menu__logo {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.33;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+    .menu__logo {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}

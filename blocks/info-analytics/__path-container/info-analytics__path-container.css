@@ -1,0 +1,9 @@
+.info-analytics__path-container {
+    display: flex;
+}
+
+@media screen and (max-width: 425px) {
+    .info-analytics__path-container {        
+        display: none;
+    }
+}

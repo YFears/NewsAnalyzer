@@ -1,0 +1,17 @@
+.results__container {
+    display: flex;
+    max-width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .results__container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

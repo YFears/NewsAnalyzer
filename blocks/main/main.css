@@ -1,0 +1,9 @@
+@import url('./__container/main__container.css');
+@import url('./__title/main__title.css');
+@import url('./__subtitle/main__subtitle.css');
+
+.main {
+    max-width: 100%;
+    padding-top: 80px;
+    padding-bottom: 94px;
+}

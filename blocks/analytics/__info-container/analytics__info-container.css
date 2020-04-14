@@ -1,0 +1,25 @@
+.analytics__info-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    column-gap: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #B6BCBF;
+}
+
+@media screen and (max-width: 768px) {
+    .analytics__info-container {
+        grid-template-columns: 15% 85%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .analytics__info-container {
+        grid-template-columns: 20% 75%;
+    }
+}

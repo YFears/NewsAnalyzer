@@ -1,0 +1,23 @@
+@import url('__row-links/footer__row-links.css');
+@import url('__row-social/row-social.css');
+@import url('__row/footer__row.css');
+@import url('__link/footer__link.css');
+@import url('__copyright/footer__copyright.css');
+@import url('__image/footer__image.css');
+.footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 660px) {
+    .footer {
+        display: grid;
+        grid-template-areas: "a b" "c c";
+        row-gap: 24px;
+    }
+}

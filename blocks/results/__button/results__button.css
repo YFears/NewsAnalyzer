@@ -1,0 +1,30 @@
+.results__button {
+    border-radius: 80px;
+    border: 0px;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.33;
+    text-align: center;
+    width: 30%;
+    min-height: 64px;
+    margin-top: 64px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .results__button {
+        min-height: 56px;
+        width: 40%;
+        margin-top: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .results__button {
+        width: 100%;
+        margin-top: 12px;
+    }
+}

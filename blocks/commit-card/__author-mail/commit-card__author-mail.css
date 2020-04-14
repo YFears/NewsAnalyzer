@@ -1,0 +1,9 @@
+.commit-card__author-mail {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    line-height: 1.57;
+    color: #1A1B22;
+    margin: 0;
+}

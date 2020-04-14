@@ -1,0 +1,38 @@
+.swiper-container {
+  width: 100%;
+  padding-bottom: 32px;
+  margin-top: 32px;
+}
+
+.swiper-wrapper {
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: repeat( 100, minmax(400px, 1fr));
+  column-gap: 18px;
+}
+
+.swiper-slide {
+  min-height: 288px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    height: 242px;
+  }
+  .swiper-wrapper {
+    grid-template-columns: repeat( 100, minmax(336px, 1fr));
+    margin-bottom: 32px;
+  }  
+}
+
+@media screen and (max-width: 425px) {
+  .swiper-slide {
+    height: 264px;
+  }
+  .swiper-wrapper {
+    grid-template-columns: repeat( 100, minmax(288px, 1fr));
+    margin-bottom: 16px;
+  }
+}

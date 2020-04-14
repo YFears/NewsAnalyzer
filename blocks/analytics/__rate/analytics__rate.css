@@ -1,0 +1,18 @@
+.analytics__rate {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .analytics__rate {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .analytics__rate {        
+        display: none;
+    }
+}

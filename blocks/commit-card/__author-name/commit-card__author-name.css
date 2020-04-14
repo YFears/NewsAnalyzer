@@ -1,0 +1,15 @@
+.commit-card__author-name {
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.625rem;
+    line-height: 1.5;
+    color: #1A1B22;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .commit-card__author-name {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,21 @@
+.analytics__data {
+    margin-top: 48px;
+}
+
+@media screen and (max-width: 1024px) {
+    .analytics__data {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .analytics__data {
+        margin-top: 24px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .analytics__data {        
+        margin-top: 16px;
+    }
+}

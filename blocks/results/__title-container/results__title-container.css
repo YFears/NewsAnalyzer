@@ -1,0 +1,13 @@
+.results__title-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+    .results__title-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

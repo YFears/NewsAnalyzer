@@ -1,0 +1,12 @@
+.card__media-source {
+    width: 90%;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #B6BCBF;
+    margin: 18px auto 24px auto;
+    text-transform: uppercase;
+    letter-spacing: .4;
+}

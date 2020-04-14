@@ -1,0 +1,36 @@
+@import url('./__container/analytics__container.css');
+@import url('./__title/analytics__title.css');
+@import url('./__count/analytics__count.css');
+@import url('./__data/analytics__data.css');
+@import url('./__date-title/analytics__date-title.css');
+@import url('./__day/analytics__day.css');
+@import url('./__info-container/analytics__info-container.css');
+@import url('./__rate/analytics__rate.css');
+@import url('./__stat-container/analytics__stat-container.css');
+
+.analytics{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #F5F6F7;;;
+}
+
+@media screen and (max-width: 1024px) {
+    .analytics {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .analytics {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .analytics {        
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
