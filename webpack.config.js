@@ -7,8 +7,8 @@ const webpack = require('webpack');
 module.exports = {
     entry: {
         main: './src/index.js',
-        about: './src/about.js',
-        paper: './src/paper.js'
+        about: './src/about/index.js',
+        analytics: './src/analytics/index.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -72,8 +72,8 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            template: './paper.html',
-            filename: 'paper.html'
+            template: './analytics.html',
+            filename: 'analytics.html'
         }),
         new WebpackMd5Hash()
     ]
