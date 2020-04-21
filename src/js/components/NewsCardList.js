@@ -6,10 +6,6 @@ export class NewsCardList {
         this.render();
     }
 
-    addCard(place) {
-        this.container.appendChild(this.getCard(place));
-    }
-
     render() {
         this.container.innerHTML = '';
         let end = this.initialCards.length < 3 ? this.initialCards.length : 3

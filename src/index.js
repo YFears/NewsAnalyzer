@@ -3,6 +3,8 @@ import { NewsApi } from './js/modules/NewsApi';
 import { NewsCard } from './js/components/NewsCard';
 import { NewsCardList } from './js/components/NewsCardList';
 import { DataStorage } from './js/modules/DataStorage';
+import { convertDate } from './js/utils/formatDates';
+import { renderLoading } from './js/utils/renderLoading';
 
 (function () {
     const formSearch = document.forms.search;
@@ -16,14 +18,14 @@ import { DataStorage } from './js/modules/DataStorage';
     const resultsButton = document.querySelector('.results__button');
 
     function getNewCard(place) {
-        const newPlace = new NewsCard(place);
+        const newPlace = new NewsCard(place, convertDate);
         return newPlace.placeCard;
     }
 
     function getInfoCard(res) {
-        const addListCard = new NewsCardList(cardsContainer, res, getNewCard, resultsButton);
+        const addListCard = new NewsCardList(cardsContainer, res, getNewCard);
         if (addListCard.initialCards.length <= 3) {
-            resultsButton.classList.toggle('form__tip_visible');
+            resultsButton.classList.toggle('visually-hidden');
         } else {
             let counter = 3;
             resultsButton.addEventListener('click', function showNext() {
@@ -35,15 +37,6 @@ import { DataStorage } from './js/modules/DataStorage';
                     resultsButton.classList.toggle('visually-hidden');
                 }
             })
-        }
-
-    }
-
-    function renderLoading(isLoading, container) {
-        if (isLoading) {
-            container.classList.toggle('visually-hidden');
-        } else {
-            container.classList.add('visually-hidden');
         }
     }
 
@@ -71,14 +64,12 @@ import { DataStorage } from './js/modules/DataStorage';
             )
             news.getNews()
                 .then((res) => {
-                    console.log(res)
                     if (res.articles.length === 0) {
                         renderLoading(true, resultsContainerNoNews);
                     } else {
                         getInfoCard(res.articles);
                         renderLoading(true, resultsContainerOk);
                         const localData = new DataStorage(formInput.value, res.articles);  
-                        console.log(localData.getData());                      
                     }
                 })
                 .catch(err => {
