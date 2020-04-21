@@ -1,6 +1,6 @@
 {
   "name": "newsanalyzer",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "NewsAnalyzer - сервис для анализа происходящих в мире событий",
   "main": "index.js",
   "scripts": {
