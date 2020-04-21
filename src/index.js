@@ -56,7 +56,7 @@ import { renderLoading } from './js/utils/renderLoading';
             const weekAgoFormat = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
             const news = new NewsApi(`http://newsapi.org/v2/everything?` +
                 `apiKey=2c8c80a1c3b048af8c0d40ee5215b9c2&` +
-                `qInTitle=${formInput.value}&` +
+                `q=${formInput.value}&` +
                 `from=${weekAgoFormat}&` +
                 `to=${todayFormat}&` +
                 `language=ru&` +
@@ -69,7 +69,8 @@ import { renderLoading } from './js/utils/renderLoading';
                     } else {
                         getInfoCard(res.articles);
                         renderLoading(true, resultsContainerOk);
-                        const localData = new DataStorage(formInput.value, res.articles);  
+                        const localData = new DataStorage(formInput.value, res.articles);
+                        localData.setData();
                     }
                 })
                 .catch(err => {
