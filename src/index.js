@@ -41,9 +41,10 @@ import { renderLoading } from './js/utils/renderLoading';
     }
 
     formSearch.addEventListener('submit', function getNewsFromApi(event) {
+        formInput.setAttribute('disabled', true);
         event.preventDefault();
-        if (formInput.value.match(/[а-яёА-ЯЁa-zA-Z]+/)) {    
-            formTip.classList.remove('form__tip-animation');        
+        if (formInput.value.match(/[а-яёА-ЯЁa-zA-Z]+/)) {
+            formTip.classList.remove('form__tip-animation');
             renderLoading(true, resultsContainerOnWait);
             renderLoading(false, resultsContainerNoNews);
             renderLoading(false, resultsContainerOnError);
@@ -79,11 +80,12 @@ import { renderLoading } from './js/utils/renderLoading';
                 })
                 .finally(() => {
                     renderLoading(false, resultsContainerOnWait);
+                    formInput.removeAttribute('disabled');
                 });
-        } else {      
-            formTip.classList.remove('form__tip_visible'); 
+        } else {
+            formTip.classList.remove('form__tip_visible');
             void formTip.offsetWidth;
-            formTip.classList.add('form__tip_visible'); 
+            formTip.classList.add('form__tip_visible');
         }
     });
 
