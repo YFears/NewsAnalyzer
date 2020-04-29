@@ -10,4 +10,7 @@
 @import url('../blocks/main/main.css');
 @import url('../blocks/github/github.css');
 @import url('../blocks/commit-card/commit-card.css');
+@import url('../blocks/circle-preloader/circle-preloader.css');
+@import url('../blocks/preloading/preloading.css');
+@import url('../vendor/visually-hidden.css');
 @import url('../common/common.css');

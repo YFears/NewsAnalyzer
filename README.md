@@ -1,6 +1,6 @@
 # [Яндекс.Практикум - Диплом NewsAnalyzer](https://yfears.github.io/NewsAnalyzer/ "'NewsAnalyzer' - сервис для анализа происходящих в мире событий")
 
-> Версия v0.5.2
+> Версия v0.8.1
 
 - [Installation](#installation)
 - [Using](#Using)

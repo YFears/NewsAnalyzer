@@ -1,11 +1,14 @@
 @import url('./__input/form__input.css');
 @import url('./__button/form__button.css');
+@import url('./__tip/form__tip.css');
+@import url('./__tip/_visible/form__tip_visible.css');
+
 .form {
     margin: 0;
     margin-top: 64px;
     margin-bottom: 80px;
     display: flex;
-    position: relative;    
+    position: relative;
 }
 
 @media screen and (max-width: 768px) {

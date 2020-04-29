@@ -9,7 +9,7 @@
     <meta name="author" content="Yury Firsau">
     <title>NewsAnalyzer</title>
     <link rel="icon" href="<%=require('./images/favicon.png').default%>" type="image/png">
-    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.paper.css %>">
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.analytics.css %>">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                 <p class="info-analytics__subtitle">34 324</p>
             </div>
             <div class="main-analitycs__note-stat">
-                <h3 class="info-analytics__title">Упоминаний в загаловках:&nbsp;</h3>
+                <h3 class="info-analytics__title">Упоминаний в заголовках:&nbsp;</h3>
                 <p class="info-analytics__subtitle">235</p>
             </div>
         </section>
@@ -114,7 +114,7 @@
         </footer>
 
     </div>
-    <script src="<%= htmlWebpackPlugin.files.chunks.paper.entry %>"></script>
+    <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 
 </html>
