@@ -7,15 +7,17 @@ export class NewsCardList {
     }
 
     render() {
+        let counter = 3;
         this.container.innerHTML = '';
-        let end = this.initialCards.length < 3 ? this.initialCards.length : 3
+        const end = this.initialCards.length < counter ? this.initialCards.length : counter
         for (let i = 0; i < end; i++) {
             this.container.appendChild(this.getCard(this.initialCards[i]));
         }
     }
 
     renderNexts(value) {
-        let end = value + 3 < this.initialCards.length ? value + 3 : this.initialCards.length;
+        let counter = 3;
+        const end = value + counter < this.initialCards.length ? value + counter : this.initialCards.length;
         for (let i = value; i < end; i++) {
             this.container.appendChild(this.getCard(this.initialCards[i]));
         }

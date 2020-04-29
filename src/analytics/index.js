@@ -25,8 +25,9 @@ import { convertToShortDate, getMonthIntl } from './../js/utils/formatDates'
     }
 
     function calculateData() {
-        let beforeToday = new Date();
-        beforeToday.setDate(beforeToday.getDate() - 6);
+        const beforeToday = new Date();
+        const differenceBetweenDays = 6;
+        beforeToday.setDate(beforeToday.getDate() - differenceBetweenDays);
         const regExp = new RegExp(lastItem,'gi')
         let i = 0;
         daysInGraph.forEach(elem => {

@@ -43,9 +43,10 @@ import { GithubApi } from './../js/modules/GithubApi';
 
     renderLoading(true, waitContainer);
     const commits = new GithubApi('https://api.github.com/repos/YFears/NewsAnalyzer/commits');
+    const commitsCount = 20;
     commits.getCommits()
         .then((res) => {
-            getInfoCard(res.slice(0, 20));            
+            getInfoCard(res.slice(0, commitsCount));            
             renderLoading(true, swiperContainer);
         })        
         .then(() => {
