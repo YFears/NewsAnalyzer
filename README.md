@@ -41,15 +41,12 @@ git clone https://github.com/YFears/NewsAnalyzer.git
 
 ### Использование
 - Используйте следующие комманды, чтобы собрать (1), запустить в режиме разработки (2) или задеплоить проект на GitHub Pages (3)
-
-1. ```bash
+```bash
 npm run build
 ```
-
-2. ```bash
+```bash
 npm run dev
 ```
-
-3. ```bash
+```bash
 npm run deploy
 ```
