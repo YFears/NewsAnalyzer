@@ -55,7 +55,7 @@ import { renderLoading } from './js/utils/renderLoading';
             const weekAgo = new Date(weekAgoMS);
             const todayFormat = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
             const weekAgoFormat = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
-            const news = new NewsApi(`https://newsapi.org/v2/everything?` +
+            const news = new NewsApi(`http://newsapi.org/v2/everything?` +
                 `apiKey=2c8c80a1c3b048af8c0d40ee5215b9c2&` +
                 `q=${formInput.value}&` +
                 `from=${weekAgoFormat}&` +
