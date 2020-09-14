@@ -48,5 +48,7 @@ npm run build
 npm run dev
 ```
 ```bash
-npm run deploy
+npm run build + npm run deploy
 ```
+
+Note: из-за введенных ограничений сайта newsapi.org проект работает только в режиме разработки, т.е. нужно клонировать репозиторий (ссылка выше), установить пакеты коммандой npm install и запустить сервер при помощи npm run dev
