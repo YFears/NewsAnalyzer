@@ -1,5 +1,3 @@
-Note: из-за введенных ограничений сайта newsapi.org проект работает только в режиме разработки, т.е. нужно клонировать репозиторий (ссылка ниже), установить пакеты коммандой npm install и запустить сервер при помощи npm run dev
-
 # [Яндекс.Практикум - Диплом NewsAnalyzer](https://yfears.github.io/NewsAnalyzer/ "'NewsAnalyzer' - Сервис для анализа происходящих в мире событий")
 <a href="https://yfears.github.io/NewsAnalyzer/"><img src="https://pixs.ru/images/2020/06/02/NA.png" title="NewsAnalyzer" alt="Сервис для анализа происходящих в мире событий"></a>
 > Версия v0.8.3
